@@ -13,7 +13,7 @@
     }
 
     header {
-      background: url('https://images.unsplash.com/photo-1549921296-3a6b54d58a5a?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1514041181368-bca62cceffcd?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
       height: 100vh;
       color: white;
       display: flex;
@@ -55,6 +55,35 @@
       font-size: 2rem;
       margin-bottom: 20px;
       color: #111;
+    }
+
+    .services, .fleet {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .card {
+      flex: 1 1 250px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 160px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .testimonial {
+      font-style: italic;
+      color: #555;
     }
 
     .gallery {
@@ -101,16 +130,64 @@
 </section>
 
 <section>
+  <h2>Why Choose Us</h2>
+  <p>✔ Professional Drivers<br>✔ 24/7 Availability<br>✔ Clean & Comfortable Rides<br>✔ Competitive Rates</p>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1628947733273-cdae71c9bfd3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Airport Transfers">
+      <h3>Airport Transfers</h3>
+      <p>On-time pickup and drop-offs for all flights.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593465678160-f99a8371fcf6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0" alt="City Rides">
+      <h3>City Rides</h3>
+      <p>Quick and safe travel across town.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1527267207156-3372670819dc?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Long Distance">
+      <h3>Long Distance</h3>
+      <p>Reliable out-of-town rides, affordable and convenient.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Fleet</h2>
+  <div class="fleet">
+    <img src="https://images.unsplash.com/photo-1512978341745-19a0952628c6?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.1.0" class="card" alt="Taxi Fleet">
+  </div>
+</section>
+
+<section>
+  <h2>Book Your Ride</h2>
+  <p>Booking your next trip with LA Source is fast and easy. Just click the button below or call us anytime.</p>
+  <a href="tel:9798145296" class="cta-button">Book Now</a>
+</section>
+
+<section>
+  <h2>Client Testimonials</h2>
+  <p class="testimonial">"Excellent service, very polite driver, arrived on time. Highly recommended!"</p>
+  <p class="testimonial">"Super clean car and smooth ride. My go-to taxi every time!"</p>
+</section>
+
+<section>
   <h2>Gallery Preview</h2>
   <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1549921296-3a6b54d58a5a?auto=format&fit=crop&w=1500&q=80" alt="Hero Taxi">
-    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b8b?auto=format&fit=crop&w=600&q=80" alt="Airport Taxi">
-    <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=600&q=80" alt="City Ride">
-    <img src="https://images.unsplash.com/photo-1596953040994-01d54203e378?auto=format&fit=crop&w=600&q=80" alt="Long Distance">
-    <img src="https://images.unsplash.com/photo-1526725702021-3405cb80cfcd?auto=format&fit=crop&w=600&q=80" alt="Sedan">
-    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&q=80" alt="Minivan">
-    <img src="https://images.unsplash.com/photo-1626421142451-fb56d3cafe5d?auto=format&fit=crop&w=600&q=80" alt="SUV">
+    <img src="https://images.unsplash.com/photo-1490650404312-a2175773bbf5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Hero Taxi">
+    <img src="https://images.unsplash.com/photo-1628947733273-cdae71c9bfd3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Airport Taxi">
+    <img src="https://images.unsplash.com/photo-1593465678160-f99a8371fcf6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0" alt="City Taxi">
+    <img src="https://images.unsplash.com/photo-1527267207156-3372670819dc?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Long Distance Taxi">
+    <img src="https://images.unsplash.com/photo-1512978341745-19a0952628c6?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Fleet Car">
   </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>📞 Phone: 979-814-5296</p>
 </section>
 
 <footer>
