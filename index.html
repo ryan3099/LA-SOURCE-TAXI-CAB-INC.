@@ -1,67 +1,170 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LA SOURCE TAXI CAB INC.</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefefe;
+      color: #222;
     }
+
     header {
-      background-color: #003366;
+      background: url('https://images.unsplash.com/photo-1549921296-3a6b54d58a5a?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      height: 100vh;
       color: white;
-      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 0 30px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .cta-button {
+      margin-top: 25px;
+      padding: 12px 28px;
+      background-color: gold;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
       text-align: center;
     }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #111;
     }
-    h1, h2 {
-      color: #003366;
-    }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
+
+    .services, .fleet {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
       margin-top: 30px;
     }
+
+    .card {
+      flex: 1 1 250px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 160px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .testimonial {
+      font-style: italic;
+      color: #555;
+    }
+
     footer {
-      background-color: #003366;
+      background: #111;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      padding: 30px 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
-  </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
+<header>
+  <h1>LA SOURCE TAXI CAB INC.</h1>
+  <p>Premium Taxi Services • Always Reliable</p>
+  <p>📞 979-814-5296</p>
+  <a href="tel:9798145296" class="cta-button">Call Now</a>
+</header>
 
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+<section>
+  <h2>About Us</h2>
+  <p>At LA Source Taxi Cab Inc., we provide prompt, safe, and professional transportation services tailored for every rider. Our mission is simple: your satisfaction and punctuality.</p>
+</section>
+
+<section>
+  <h2>Why Choose Us</h2>
+  <p>✔ Professional Drivers<br>✔ 24/7 Availability<br>✔ Clean & Comfortable Rides<br>✔ Competitive Rates</p>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1580582932707-520aed937b8b?auto=format&fit=crop&w=600&q=80" alt="Airport Rides">
+      <h3>Airport Transfers</h3>
+      <p>On-time pickup and drop-offs for all flights.</p>
     </div>
-  </section>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=600&q=80" alt="City Rides">
+      <h3>City Rides</h3>
+      <p>Quick and safe travel across town.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1596953040994-01d54203e378?auto=format&fit=crop&w=600&q=80" alt="Long Distance">
+      <h3>Long Distance</h3>
+      <p>Reliable out-of-town rides, affordable and convenient.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
-  </footer>
+<section>
+  <h2>Our Fleet</h2>
+  <div class="fleet">
+    <img src="https://images.unsplash.com/photo-1526725702021-3405cb80cfcd?auto=format&fit=crop&w=600&q=80" class="card" alt="Sedan">
+    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&q=80" class="card" alt="Minivan">
+    <img src="https://images.unsplash.com/photo-1626421142451-fb56d3cafe5d?auto=format&fit=crop&w=600&q=80" class="card" alt="SUV">
+  </div>
+</section>
+
+<section>
+  <h2>Book Your Ride</h2>
+  <p>Booking your next trip with LA Source is fast and easy. Just click the button below or call us anytime.</p>
+  <a href="tel:9798145296" class="cta-button">Book Now</a>
+</section>
+
+<section>
+  <h2>Client Testimonials</h2>
+  <p class="testimonial">"Excellent service, very polite driver, arrived on time. Highly recommended!"</p>
+  <p class="testimonial">"Super clean car and smooth ride. My go-to taxi every time!"</p>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>📞 Phone: 979-814-5296</p>
+  <p>📧 Email: [add your email if needed]</p>
+</section>
+
+<footer>
+  &copy; 2025 LA SOURCE TAXI CAB INC. All rights reserved.
+</footer>
+
 </body>
 </html>
